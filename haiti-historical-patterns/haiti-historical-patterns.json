@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "dataset": "Haiti Historical Patterns — Intelligence Database",
-  "version": "1.0.0",
-  "generated_at": "2026-04-14T23:59:11Z",
+  "version": "1.1.0",
+  "generated_at": "2026-04-15T00:28:02Z",
   "generated_by": "AYITI INTEL Dashboard (ayitiintel.com)",
   "license": "CC BY 4.0",
   "description": "Structured dataset of 46 historical events across four structural dependency cycles in Haitian history: the 1825 French independence debt (150M gold francs), the 1915–34 US military occupation (customs/banks seized, 40% income to debt service), the 1991–94 Cédras military junta (sanctions, FRAPH terror, Operation Uphold Democracy), and the 2004 gang consolidation and coup (Cannibal Army, Aristide removal, MINUSTAH).",
@@ -51,7 +51,9 @@
     "type": "Event category. One of: 'military' | 'economic' | 'political' | 'resistance'.",
     "impact": "Qualitative impact rating. One of: 'critical' | 'high' | 'medium' | 'low'.",
     "impact_rank": "Numeric sort key for impact (1=critical, 2=high, 3=medium, 4=low). Useful for ordering.",
-    "location": "Primary geographic location of the event. Haiti-centric; international actors noted where relevant."
+    "location": "Primary geographic location of the event. Haiti-centric; international actors noted where relevant.",
+    "modern_parallel": "Free-text string (1–2 sentences). Explicitly connects the historical event to the 2024–2026 situation. Present only on v1.0.0 events (IDs 1–46); v2.0.0 extension events ARE the modern situation and do not carry this field.",
+    "trajectory_signal": "Categorical. One of: escalating | de-escalating | stable | inflection | repeating. escalating = historical precedent shows the situation worsens from here; de-escalating = pattern suggests relief is coming; stable = mirrors a stable period in the cycle; inflection = pivot point — could go either way; repeating = exact structural repeat of this pattern is currently underway."
   },
   "stats": {
     "total_events": 46,
@@ -85,7 +87,9 @@
       "type": "political",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "The sovereignty-for-payment logic of 1804–1825 repeats in the 2024 GSF deployment terms: external security restoration is again conditioned on institutional compliance, with IMF structural benchmarks attached to any post-gang stabilization package.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 2,
@@ -97,7 +101,9 @@
       "type": "economic",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Paris / PAP"
+      "location": "Paris / PAP",
+      "modern_parallel": "The 2024 CPT's dependence on US/CARICOM recognition for legitimacy mirrors the Boyer government's position in 1825 — sovereignty is again conditional on satisfying external creditors' terms, with the US effectively holding recognition leverage over the transitional government.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 3,
@@ -109,7 +115,9 @@
       "type": "economic",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Paris"
+      "location": "Paris",
+      "modern_parallel": "IMF structural adjustment conditions attached to Aristide's 1994 return — and now to any post-gang stabilization scenario — replicate the 1825 bank-loan mechanism: foreign credit enables state survival while embedding fiscal control as a condition of that survival.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 4,
@@ -121,7 +129,9 @@
       "type": "diplomatic",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Paris"
+      "location": "Paris",
+      "modern_parallel": "The 1838 renegotiation (150M → 60M francs) offers the only historical template for successful debt-condition revision: it required sustained Haitian diplomatic pressure over 13 years. No comparable leverage exists in the 2024–2026 CPT's relationship with the CORE Group.",
+      "trajectory_signal": "stable"
     },
     {
       "id": 5,
@@ -133,7 +143,9 @@
       "type": "economic",
       "impact": "medium",
       "impact_rank": 3,
-      "location": "Germany"
+      "location": "Germany",
+      "modern_parallel": "Debt diffusion to multiple creditors (French → German banks) mirrors the 2024 security burden-sharing problem: as the US partially withdraws (funding freeze Jan 2025), other actors (Kenya, Chad, Caribbean states) absorb costs but with different priorities and leverage.",
+      "trajectory_signal": "escalating"
     },
     {
       "id": 6,
@@ -145,7 +157,9 @@
       "type": "economic",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Paris"
+      "location": "Paris",
+      "modern_parallel": "Each refinancing extended external fiscal control past the original intervention window. The MSS→GSF transition in Sep 2025 follows the same pattern — a mandate renewal that re-embeds foreign security control rather than building towards Haitian institutional independence.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 7,
@@ -157,7 +171,9 @@
       "type": "economic",
       "impact": "high",
       "impact_rank": 2,
-      "location": "New York"
+      "location": "New York",
+      "modern_parallel": "Institutional capture of the Banque Nationale by US banking interests in 1905 pre-positioned the 1915 occupation. Current US veto power over CPT membership (visa sanctions, Jan 2026) and Fils-Aimé's tenure represents equivalent pre-positioning of political control without a formal presence.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 8,
@@ -169,7 +185,9 @@
       "type": "economic",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "New York"
+      "location": "New York",
+      "modern_parallel": "The 1922 loan extended US economic control six years past military withdrawal — the key precedent for why the 1994 IMF conditions attached to Aristide's return matter: economic conditionality outlasts military presence by design. The same structure is visible in any post-GSF stabilization package.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 9,
@@ -181,7 +199,9 @@
       "type": "economic",
       "impact": "medium",
       "impact_rank": 3,
-      "location": "Haiti"
+      "location": "Haiti",
+      "modern_parallel": "The 122-year debt cycle closed only when the US replaced French fiscal control with its own banking infrastructure. No Haiti crisis since has reached structural closure without an external actor redefining the terms — a pattern directly relevant to what 'resolution' of the 2024–2026 crisis will actually look like.",
+      "trajectory_signal": "de-escalating"
     },
     {
       "id": 10,
@@ -193,7 +213,9 @@
       "type": "political",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "The Moïse assassination (Jul 7 2021) is a direct structural repeat: presidential killing creates legitimacy vacuum, multiple actors claim authority, and the US moves within days to designate a preferred successor (Henry, as it designated Dartiguenave in 1915).",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 11,
@@ -205,7 +227,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "Operation Uphold Democracy (1994) and the GSF (2024–) follow the same entry logic: a legitimacy crisis provides the pretext, ships are pre-positioned, and the intervention is framed as Haitian-requested. The critical difference is 2024 uses an African proxy (Kenya) to reduce US political exposure.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 12,
@@ -217,7 +241,9 @@
       "type": "political",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "The April 3 2024 CARICOM agreement establishing the CPT was signed under equivalent duress — gang blockade of the capital and Henry's inability to return. Treaties signed under coercion in Haiti have historically been used to legitimize the next phase of external control.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 13,
@@ -229,7 +255,9 @@
       "type": "economic",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "No direct customs seizure in the current cycle, but the IMF's role in conditioning any debt relief or budget support for the transitional government functions as a soft equivalent — fiscal policy oversight without a physical presence at the customs house.",
+      "trajectory_signal": "stable"
     },
     {
       "id": 14,
@@ -241,7 +269,9 @@
       "type": "political",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Haiti"
+      "location": "Haiti",
+      "modern_parallel": "The CPT's Nov 2025 mandate to convene a constitutional assembly — under conditions where gangs control 90% of the capital — replicates the 1917 dynamic: constitutional revision driven by external actors during occupation, with popular legitimacy impossible to establish.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 15,
@@ -253,7 +283,9 @@
       "type": "social",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Haiti"
+      "location": "Haiti",
+      "modern_parallel": "No direct corvée parallel in 2024–2026, but gang extortion systems documented by GI-TOC (Jan 2025) — mandatory 'taxes' on merchants, transport operators, and residents — function as a non-state equivalent: coerced labor and commerce tribute within gang-controlled territory.",
+      "trajectory_signal": "escalating"
     },
     {
       "id": 16,
@@ -265,7 +297,9 @@
       "type": "resistance",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Northern Haiti"
+      "location": "Northern Haiti",
+      "modern_parallel": "No organized armed resistance movement has emerged against Viv Ansanm or the GSF comparable to the Cacos. The absence of a Péralte figure in 2024–2026 is itself analytically significant — popular resistance has been atomized rather than coalesced, partly because the adversary is Haitian, not foreign.",
+      "trajectory_signal": "stable"
     },
     {
       "id": 17,
@@ -277,7 +311,9 @@
       "type": "military",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Grande Rivière"
+      "location": "Grande Rivière",
+      "modern_parallel": "Chérizier faces the same calculated-martyr dynamic — his elimination would fragment G9 into 3–5 splinter groups harder to negotiate with than a single commander. The GSF has implicitly recognized this by not targeting him directly despite his Aug 2025 US indictment.",
+      "trajectory_signal": "inflection"
     },
     {
       "id": 18,
@@ -289,7 +325,9 @@
       "type": "military",
       "impact": "medium",
       "impact_rank": 3,
-      "location": "Northern Haiti"
+      "location": "Northern Haiti",
+      "modern_parallel": "The post-Batraville quiet (1920–1929) was illusory — grievances were suppressed, not resolved, producing the 1929 Les Cayes protests. A comparable 'quiet' following any GSF tactical success against Viv Ansanm should be read with the same caution: fragmentation ≠ resolution.",
+      "trajectory_signal": "de-escalating"
     },
     {
       "id": 19,
@@ -301,7 +339,9 @@
       "type": "military",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Les Cayes"
+      "location": "Les Cayes",
+      "modern_parallel": "HNP 'summary execution' allegations documented by UN (Mar 2026) mirror the Les Cayes dynamic: security force violence against civilians during an occupation-style mission generates the same legitimacy erosion that accelerated US withdrawal pressure in 1929–1930.",
+      "trajectory_signal": "escalating"
     },
     {
       "id": 20,
@@ -313,7 +353,9 @@
       "type": "political",
       "impact": "medium",
       "impact_rank": 3,
-      "location": "Washington DC"
+      "location": "Washington DC",
+      "modern_parallel": "No independent commission equivalent exists in the current cycle, but the US funding freeze (Jan 2025) and Kenya withdrawal timeline (Oct 2026) function as the political equivalent — external actors signaling an exit while the underlying conditions remain unresolved.",
+      "trajectory_signal": "de-escalating"
     },
     {
       "id": 21,
@@ -325,7 +367,9 @@
       "type": "military",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Haiti"
+      "location": "Haiti",
+      "modern_parallel": "The 1934 withdrawal left US customs control in place until 1941 — a 7-year institutional tail. If the GSF withdraws on its Oct 2026 timeline, UNSOH (logistical support office) and BINUH (political mission, renewed to Jan 2027) will serve as the equivalent institutional tail.",
+      "trajectory_signal": "de-escalating"
     },
     {
       "id": 22,
@@ -337,7 +381,9 @@
       "type": "economic",
       "impact": "medium",
       "impact_rank": 3,
-      "location": "Haiti"
+      "location": "Haiti",
+      "modern_parallel": "Customs control ending in 1941 — 7 years after the Marines left — marks the true end of the occupation cycle, not 1934. The structural lesson for 2026: the GSF's eventual departure date will not mark the end of external control; watch for UNSOH mandate expansions and IMF conditionality.",
+      "trajectory_signal": "stable"
     },
     {
       "id": 23,
@@ -349,7 +395,9 @@
       "type": "political",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Gonaïves"
+      "location": "Gonaïves",
+      "modern_parallel": "The Métayer assassination is the 2004 exact analogue for the Moïse assassination in 2021: eliminating the leader of a state-allied armed group to trigger a crisis the state could no longer contain. In 2021, the state itself was the target — the structural escalation is one order of magnitude higher.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 24,
@@ -361,7 +409,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Gonaïves"
+      "location": "Gonaïves",
+      "modern_parallel": "Viv Ansanm's Feb 29 2024 Port-au-Prince offensive is the direct 20-year repeat — coordinated multi-city assault timed to a government moment of maximum vulnerability (Henry abroad, in Kenya). The 2024 operation was operationally superior: simultaneous airport, prison, and police station targeting.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 25,
@@ -373,7 +423,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Northern border"
+      "location": "Northern border",
+      "modern_parallel": "No equivalent DR-based insurgent crossing in the current cycle, but the DR's role as a sanctuary for Haitian gang weapon supply chains and a transit corridor for gang leadership is structurally analogous — the border remains a key operational variable unaddressed by the GSF mandate.",
+      "trajectory_signal": "escalating"
     },
     {
       "id": 26,
@@ -385,7 +437,9 @@
       "type": "military",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Saint-Marc"
+      "location": "Saint-Marc",
+      "modern_parallel": "HNP collapse in the face of Viv Ansanm's 2024 offensive — police stations burned, officers killed — replays the 2004 police retreat pattern city by city. As of Mar 2026, HNP has not recovered meaningful independent operational capacity without MSS/GSF joint patrols.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 27,
@@ -397,7 +451,9 @@
       "type": "diplomatic",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "The CPT's structural failure to negotiate with Viv Ansanm (gang leaders excluded from transitional discussions, Apr 2024) replicates the opposition's 2004 rejection of Aristide's offer — in both cases, the 'winning' side preferred full capture over negotiated accommodation.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 28,
@@ -409,7 +465,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Cap-Haïtien"
+      "location": "Cap-Haïtien",
+      "modern_parallel": "Viv Ansanm's Mar 2024 control of ~80% of Port-au-Prince exceeds the 2004 paramilitary high-water mark in both speed and scope. The 2004 paramilitaries needed 24 days to reach decisive control; Viv Ansanm achieved comparable dominance in under 72 hours of coordinated assault.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 29,
@@ -421,7 +479,9 @@
       "type": "political",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "Ariel Henry's departure — stranded abroad, resigning by letter from Los Angeles — structurally mirrors Aristide's 2004 removal but without the aircraft or the official US fingerprints. The outcome is identical: US-preferred successor installed (Fils-Aimé) while the ousted PM's ultimate fate remains ambiguous.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 30,
@@ -433,7 +493,9 @@
       "type": "military",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "The GSF's Jun 2024 landing replays the MIF's Mar 2004 entry: both arrive after the decisive political event (Aristide/Henry removal), both are too small to restore order independently, and both trigger a multi-year multilateral mission that outlasts the original crisis by years.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 31,
@@ -445,7 +507,9 @@
       "type": "political",
       "impact": "high",
       "impact_rank": 2,
-      "location": "New York"
+      "location": "New York",
+      "modern_parallel": "GSF authorized strength 5,500 vs. ~1,000 deployed as of early 2026 mirrors MINUSTAH's 2004 under-deployment ratio. If the gap persists past July 2026, extended presence (Scenario B) becomes structurally near-certain — exactly as MINUSTAH's 6-month mandate became 13 years.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 32,
@@ -457,7 +521,9 @@
       "type": "social",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Artibonite River"
+      "location": "Artibonite River",
+      "modern_parallel": "GSF human rights accountability mechanisms are weaker than MINUSTAH's at an equivalent stage. UN Human Rights Due Diligence Policy (HRDDP) applies, but oversight of conduct in gang-controlled territory is functionally impossible. The cholera precedent is the reason HRDDP was written — and why its application matters.",
+      "trajectory_signal": "escalating"
     },
     {
       "id": 33,
@@ -469,7 +535,9 @@
       "type": "political",
       "impact": "medium",
       "impact_rank": 3,
-      "location": "Haiti"
+      "location": "Haiti",
+      "modern_parallel": "MINUSTAH's 2017 end produced MINUJUSTH then BINUH — each transition downsizing the mission while gang violence filled the vacuum. The MSS→GSF→UNSOH+BINUH sequence in 2025–2026 is structurally identical: rebranding and scope reduction while the security environment deteriorates.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 34,
@@ -481,7 +549,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "No direct military coup in the current cycle — the armed actors are non-state. But the structural effect of the Feb 29 2024 Viv Ansanm offensive (forcing a PM from power, installing an unelected transitional body) is functionally equivalent to a coup outcome without a coup's legal form.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 35,
@@ -493,7 +563,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Haiti-wide"
+      "location": "Haiti-wide",
+      "modern_parallel": "Viv Ansanm's Dec 2024 massacre (180+ killed in a single month) matches the 1991 first-days kill rate. The difference: in 1991 the killers were state forces; in 2024 they are non-state actors operating in the absence of state forces — which removes the sanctions-on-state-actors toolkit.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 36,
@@ -505,7 +577,9 @@
       "type": "economic",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Washington DC"
+      "location": "Washington DC",
+      "modern_parallel": "The 1991 OAS embargo took 3 years to produce results; the 2024 UNSC authorization of the MSS took 12 months from Haiti's request and another 8 months to field the first troops. Both cycles show the same lag between international recognition of crisis and effective multilateral response.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 37,
@@ -517,7 +591,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Haiti-wide"
+      "location": "Haiti-wide",
+      "modern_parallel": "GI-TOC documents Viv Ansanm as a parallel sovereignty structure with bureaucratized governance — exactly as FRAPH was a paramilitarized state-within-a-state. The 2024 coalition's ~3,000 annual killings (UN data) numerically matches the FRAPH 3-year total, compressed into a single year.",
+      "trajectory_signal": "escalating"
     },
     {
       "id": 38,
@@ -529,7 +605,9 @@
       "type": "political",
       "impact": "high",
       "impact_rank": 2,
-      "location": "Caribbean"
+      "location": "Caribbean",
+      "modern_parallel": "US Coast Guard interdiction of Haitian refugees continues in 2024–2026 under the same legal framework established during the 1991–94 junta period. The 1993 Supreme Court ruling (Sale v. Haitian Centers Council) permitting interdiction on the high seas remains operative — the 1994 policy has never been structurally revised.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 39,
@@ -541,7 +619,9 @@
       "type": "economic",
       "impact": "high",
       "impact_rank": 2,
-      "location": "New York"
+      "location": "New York",
+      "modern_parallel": "The 2024 arms embargo on Haiti (UNSC Res 2653, extended through 2026) is the direct institutional descendant of the 1993 junta embargo. Enforcement effectiveness is comparable — porous in both cases, with weapons flowing through the DR in 2024 as through the Dominican Republic in 1993.",
+      "trajectory_signal": "stable"
     },
     {
       "id": 40,
@@ -553,7 +633,9 @@
       "type": "political",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Governors Island, NY"
+      "location": "Governors Island, NY",
+      "modern_parallel": "The Apr 3 2024 CARICOM agreement establishing the CPT is the structural equivalent of Governors Island — a negotiated transition framework brokered under external pressure, with gang leaders (like Cédras in 1993) excluded from the table and retaining the capacity to sabotage implementation.",
+      "trajectory_signal": "inflection"
     },
     {
       "id": 41,
@@ -565,7 +647,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince harbor"
+      "location": "Port-au-Prince harbor",
+      "modern_parallel": "The Harlan County retreat is the single most important precedent for the Jan 2025 US funding freeze: both signal US hesitation at the cost-of-commitment moment. In 1993 it took 12 more months and 20,000 troops to reverse course; the 2025 freeze similarly preceded a larger commitment (GSF transition, Chad deployment).",
+      "trajectory_signal": "inflection"
     },
     {
       "id": 42,
@@ -577,7 +661,9 @@
       "type": "economic",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "New York"
+      "location": "New York",
+      "modern_parallel": "No comprehensive full embargo equivalent exists in the current cycle — because the adversary is non-state, a trade embargo cannot be targeted at the gang coalition the way it was targeted at the Cédras government. This is the key structural asymmetry that makes the 2024–2026 intervention harder than 1991–94.",
+      "trajectory_signal": "stable"
     },
     {
       "id": 43,
@@ -589,7 +675,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "New York"
+      "location": "New York",
+      "modern_parallel": "UNSC Res 2699 (Oct 2023) authorizing the MSS is the direct successor to Res 940, with one critical difference: Res 940 authorized member states to 'use all necessary means' (Chapter VII); Res 2699 authorized 'operational support' to the HNP — a materially weaker mandate that explains the GSF's limited effectiveness.",
+      "trajectory_signal": "repeating"
     },
     {
       "id": 44,
@@ -601,7 +689,9 @@
       "type": "political",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "No equivalent last-minute high-level negotiation mission has been deployed to secure a Viv Ansanm stand-down in 2024–2026 — because Chérizier's coalition has political demands (participation in governance, not just immunity) that the international community has refused to legitimize at the table.",
+      "trajectory_signal": "escalating"
     },
     {
       "id": 45,
@@ -613,7 +703,9 @@
       "type": "military",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Haiti"
+      "location": "Haiti",
+      "modern_parallel": "Operation Uphold Democracy landed 20,000 troops against a state actor with a known command structure. The GSF targets a non-state coalition with 26 federated groups and no single capitulation authority — the 1994 playbook (negotiate with the commander, troops follow) cannot be mechanically applied.",
+      "trajectory_signal": "stable"
     },
     {
       "id": 46,
@@ -625,7 +717,9 @@
       "type": "economic",
       "impact": "critical",
       "impact_rank": 1,
-      "location": "Port-au-Prince"
+      "location": "Port-au-Prince",
+      "modern_parallel": "The 1994 Aristide return with attached IMF conditions is the exact template for the post-gang-crisis scenario: any restored Haitian government will face IMF structural adjustment as the price of international financial normalization, replicating the fiscal control mechanism even after the security mission ends.",
+      "trajectory_signal": "repeating"
     }
   ]
 }
