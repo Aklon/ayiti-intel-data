@@ -8,7 +8,9 @@ Structured historical datasets powering the [AYITI INTEL](https://ayitiintel.com
 
 | Dataset | Events | Description |
 |---------|--------|-------------|
-| [`haiti-historical-patterns/`](./haiti-historical-patterns/) | 46 | Four structural dependency cycles: 1825 French debt · 1915–34 US occupation · 1991–94 Cédras junta · 2004 coup |
+| [`haiti-historical-patterns/`](./haiti-historical-patterns/) | 46 | **v1.0.0** — Four structural dependency cycles: 1825 French debt · 1915–34 US occupation · 1991–94 Cédras junta · 2004 coup |
+| [`haiti-historical-patterns/`](./haiti-historical-patterns/) (extension) | 37 | **v2.0.0** — Current crisis window: electoral collapse (2015–2026) · gang consolidation/Viv Ansanm (2020–2026) · MSS/GSF intervention (2023–2026) |
+| **Combined** | **83** | **7 themes, 1804–2026** |
 
 ---
 
